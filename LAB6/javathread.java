@@ -10,11 +10,10 @@ class  thread extends Thread{
     int id; // identificador das threads
     int bloco = javathread.tamvetor/javathread.Nthreads; 
 
-    //Construtor da thread
-    public thread(int tid){
+    public thread(int tid)
+    {
         this.id = tid;
     }
-
     
     public synchronized void par()
     {
@@ -25,14 +24,16 @@ class  thread extends Thread{
     {
         if(this.id==javathread.Nthreads-1){
             for(int i=id*bloco;i < javathread.tamvetor;i++){
-                if(javathread.vetor[i]%2==0){
+                if(javathread.vetor[i]%2==0)
+                {
                     par();
                 }
             }
         }
         else{
             for(int i=id*bloco ; i<bloco*(this.id+1) ; i++){
-                if(javathread.vetor[i]%2==0){
+                if(javathread.vetor[i]%2==0)
+                {
                     par();
                 }
             }
