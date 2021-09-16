@@ -1,3 +1,10 @@
+/* Disciplina: Computacao Concorrente */
+/* Prof.: Silvana Rossetto */
+/* Laboratório: 6 */
+/* Aluno: Marcelo Augustos J Rodrigues */
+/* DRE: 118143203 */
+/* -------------------------------------------------------------------*/
+
 import java.lang.Math;
 import java.util.Scanner;
 
